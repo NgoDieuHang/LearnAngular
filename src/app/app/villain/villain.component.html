@@ -1,0 +1,17 @@
+<div class="main-body">
+	<h1>
+		My id {{villain.id}}
+	</h1>
+	<h1>
+		My villain is {{villain.name}}
+	</h1>
+	<h2>
+		<p *ngFor="let skill of villain.skills">
+			{{skill}}
+		</p>
+	</h2>
+	<h2>
+		Villain name: 
+		<input type="text" [(ngModel)]="villain.name">
+	</h2>
+</div>
