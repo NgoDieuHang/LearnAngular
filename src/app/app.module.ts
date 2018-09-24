@@ -2,13 +2,20 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { HerosComponent } from './app/heros/heros.component';
+import {FormsModule} from '@angular/forms';
+import { VillainComponent } from './app/villain/villain.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HerosComponent,
+    VillainComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
