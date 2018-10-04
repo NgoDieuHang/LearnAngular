@@ -1,0 +1,14 @@
+<img class="img-list-hero" src="https://kenh14cdn.com/2018/3/14/photo-3-1521008911473927395121.jpg">
+<h1 class="title-list-hero">
+  List hero in the world!!!
+</h1>
+<div class="div-list-hero">
+  <li class="btn-hero" *ngFor="let Hero of listHero"
+         (click)="onSelect(Hero)"
+          [class.selected]="Hero===selectHero">
+          {{Hero.id + ". " + Hero.name}}
+  </li>
+</div>
+<div class="div-hero">
+  <app-heros [hero]="selectHero"></app-heros>
+</div>

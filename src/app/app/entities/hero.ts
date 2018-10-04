@@ -1,5 +1,5 @@
-export class Hero{
-	public id: number;
-	public name: string;
-	public skills: string[];
+export class Hero {
+  public id: number;
+  public name: string;
+  public skills: string[];
 }

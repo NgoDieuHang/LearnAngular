@@ -1,17 +1,14 @@
-<div class="main-body">
-	<h1>
-		My id {{hero.id}}
-	</h1>
-	<h1>
-		My heros is {{hero.name}}
-	</h1>
-	<h2>
-		<p *ngFor="let skill of hero.skills">
-			{{skill}}
-		</p>
-	</h2>
-	<h2>
-		Hero name: 
-		<input type="text" [(ngModel)]="hero.name">
-	</h2>
+<div class="hero" *ngIf="hero">
+  <p class="div-detail">
+    ID: {{hero.id}}
+  </p>
+  <p class="div-detail">
+    Name hero: {{hero.name}}
+  </p>
+  <div class="div-detail">
+    <p>Skills: </p>
+    <p *ngFor="let skill of hero.skills;index as i">
+      {{i+1}}. {{skill}}
+    </p>
+  </div>
 </div>
