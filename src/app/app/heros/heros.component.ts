@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { Hero } from '../entities/hero';
+import {Component, Input, OnInit} from '@angular/core';
+import {Hero} from '../entities/hero';
 
 
 @Component({
@@ -8,14 +8,14 @@ import { Hero } from '../entities/hero';
   styleUrls: ['./heros.component.css']
 })
 export class HerosComponent implements OnInit {
-	hero: Hero;
+  @Input() hero: Hero;
 
   constructor() {
-  this.hero= new Hero();
-  this.hero.id=1;
-  this.hero.name='Yu';
-  this.hero.skills=['fly','run']; 
-}
+    this.hero = new Hero();
+    this.hero.id = 1;
+    this.hero.name = 'Yu';
+    this.hero.skills = ['fly', 'run'];
+  }
 
   ngOnInit() {
   }

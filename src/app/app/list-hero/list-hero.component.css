@@ -1,0 +1,39 @@
+.main-body{
+  background-color: #CCFFFF;
+}
+.title-list-hero{
+  color: red;
+  text-align: center;
+}
+.btn-hero{
+  text-align: left;
+  font-size: 20px;
+  width: 200px;
+  color: #fff;
+  background-color: #0062cc;
+  border-color: #005cbf;
+  font-weight: bold;
+  margin-top: 20px;
+  padding: 5px;
+  text-decoration: none;
+  list-style-type: none;
+  cursor: pointer;
+}
+.btn-hero:hover, .selected{
+  background-color: #545b62;
+  border-color: #4e555b;
+}
+.div-list-hero{
+  float: left;
+  margin-left: 350px;
+}
+.div-hero{
+  float: right;
+  margin-right: 280px;
+}
+
+.img-list-hero{
+  width: 1341px;
+  height: 350px;
+}
+
