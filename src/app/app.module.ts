@@ -1,13 +1,13 @@
-import { BrowserModule } from '@angular/platform-browser';
+import {BrowserModule} from '@angular/platform-browser';
 
 
-import { HerosComponent } from './app/heros/heros.component';
+import {HerosComponent} from './app/heros/heros.component';
 import {FormsModule} from '@angular/forms';
-import { VillainComponent } from './app/villain/villain.component';
+import {VillainComponent} from './app/villain/villain.component';
 import {ListHeroComponent} from './app/list-hero/list-hero.component';
 import {AppComponent} from './app.component';
 import {NgModule} from '@angular/core';
-
+import {MessageComponent} from './app/message/message.component';
 
 @NgModule
 ({
@@ -15,7 +15,8 @@ import {NgModule} from '@angular/core';
     AppComponent,
     HerosComponent,
     VillainComponent,
-    ListHeroComponent
+    ListHeroComponent,
+    MessageComponent
   ],
   imports: [
     BrowserModule,
@@ -24,4 +25,5 @@ import {NgModule} from '@angular/core';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
