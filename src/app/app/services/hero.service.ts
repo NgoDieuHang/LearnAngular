@@ -18,12 +18,12 @@ export class HeroService {
     return of(listHero);
   }
 
-  getHeroById(id: number): Hero {
+  getHeroById(id: number): Observable<Hero> {
     this.messageService.addMessage('You load data of heroes have' + id);
-    return listHero.find(
+    return of(listHero.find(
       function (element) {
         return element.id === id;
       }
-    );
+    ));
   }
 }

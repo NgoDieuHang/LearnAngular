@@ -1,5 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Hero} from '../entities/hero';
+import {ActivatedRoute} from '@angular/router';
+import {HeroService} from '../services/hero.service';
 
 
 @Component({
@@ -10,14 +12,20 @@ import {Hero} from '../entities/hero';
 export class HerosComponent implements OnInit {
   @Input() hero: Hero;
 
-  constructor() {
-    this.hero = new Hero();
-    this.hero.id = 1;
-    this.hero.name = 'Yu';
-    this.hero.skills = ['fly', 'run'];
+  constructor(private heroSevice: HeroService, private activateRoute: ActivatedRoute) {
+
   }
 
   ngOnInit() {
+    const id = +this.activateRoute.snapshot.paramMap.get('id');
+    this.heroSevice.getHeroById(id).subscribe(
+      hero => {
+        this.hero = hero;
+      },
+      error1 => {
+        console.log('error');
+      }
+    );
   }
 
 }

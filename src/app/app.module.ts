@@ -9,6 +9,7 @@ import {AppComponent} from './app.component';
 import {NgModule} from '@angular/core';
 import {MessageComponent} from './app/message/message.component';
 import { AppRoutingModule } from './app-routing.module';
+import { DashboardComponent } from './app/dashboard/dashboard.component';
 
 @NgModule
 ({
@@ -17,7 +18,8 @@ import { AppRoutingModule } from './app-routing.module';
     HerosComponent,
     VillainComponent,
     ListHeroComponent,
-    MessageComponent
+    MessageComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
