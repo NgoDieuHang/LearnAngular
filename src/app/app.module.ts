@@ -8,6 +8,7 @@ import {ListHeroComponent} from './app/list-hero/list-hero.component';
 import {AppComponent} from './app.component';
 import {NgModule} from '@angular/core';
 import {MessageComponent} from './app/message/message.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule
 ({
@@ -20,7 +21,8 @@ import {MessageComponent} from './app/message/message.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
